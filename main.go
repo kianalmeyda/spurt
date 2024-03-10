@@ -135,7 +135,7 @@ func get() {
 		// Handle other types of errors
 		fmt.Printf(colourise(red, clear+"Error sending request: %s"), err)
 	} else {
-		fmt.Print(colourise(green, clear+"Status: OK"))
+		fmt.Print(colourise(green, clear+"DDoS IS ACTIVE"))
 	}
 
 	// Close response body if not nil
@@ -153,7 +153,7 @@ func loop() {
 
 func main() {
 	fmt.Println(colourise(cyan, banner))
-	fmt.Println(colourise(cyan, "\n\t\tgithub.com/zer-far\n"))
+	fmt.Println(colourise(cyan, "\n\t\GhostExploiter - XYNN\n"))
 
 	flag.StringVar(&target, "url", "", "URL to target.")
 	flag.IntVar(&timeout, "timeout", 3000, "Timeout in milliseconds.")
